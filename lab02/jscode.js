@@ -7,7 +7,7 @@ var msgValidation, answerMsg;
 guestName = prompt('Hi there!\nWhat\'s your name?');
 
 alert('Great to have you here ' + guestName + 
-     '! \n\nLet\'s play! I will ask you 5 yes/no questions about me and at the end we will see how you correct you was :-D');
+     '! \n\nLet\'s play a game! I will ask you 5 yes/no questions about me and at the end we will see how you correct you was :-D');
 
 // asking 5 questions
 
@@ -63,22 +63,47 @@ if (msgValidation!==''){
 }
 else{
   // alert the user answers
-  answerMsg = 'Let\'see if you where correct !!!\n'; 
+  answerMsg = 'Let\'see how correct you are ' + guestName + '\n';
 
   if ((askSoccer.trim().toLowerCase()=== 'yes') || (askSoccer.trim().toLowerCase()=== 'y')){ 
     answerMsg = answerMsg + "\nAbout soccer, you said YES. Sorry! I don\'t like soccer..."; 
   }
   else {
-    answerMsg = answerMsg + "\nYou said NO. That\s right! I don\'t like soccer..."; 
+    answerMsg = answerMsg + "\nAbout soccer, You said NO. That\s right! I don\'t like soccer..."; 
   }
 
+  if ((askCats.trim().toLowerCase()=== 'yes') || (askCats.trim().toLowerCase()=== 'y')){ 
+    answerMsg = answerMsg + "\nAbout pets, you said YES. Nope! I prefer cats..."; 
+  }
+  else {
+    answerMsg = answerMsg + "\nAbout pets, you said NO. That\'s correct! I prefer cats..."; 
+  }
 
+  if ((askTDK.trim().toLowerCase()=== 'yes') || (askTDK.trim().toLowerCase()=== 'y')){ 
+    answerMsg = answerMsg + "\nAbout TDK, you said YES. Rigth! I love TDK, I\'m a black belt..."; 
+  }
+  else {
+    answerMsg = answerMsg + "\nAbout TDK, you said NO... I reality love it and I\'m a black belt..."; 
+  }
  
+  if ((askRun.trim().toLowerCase()=== 'yes') || (askRun.trim().toLowerCase()=== 'y')){ 
+    answerMsg = answerMsg + "\nAbout running, you said YES. I\'m not, so far I ran a 21k..."; 
+  }
+  else {
+    answerMsg = answerMsg + "\nAbout runnning, you said NO... You\'re right! my longest distance is 21k..."; 
+  }
 
+  if ((askKids.trim().toLowerCase()=== 'yes') || (askKids.trim().toLowerCase()=== 'y')){ 
+    answerMsg = answerMsg + "\nAbout kids, you said YES. God no! I only have two..."; 
+  }
+  else {
+    answerMsg = answerMsg + "\nAbout kids, you said NO... Right answer! I have two kids..."; 
+  }
 
+  answerMsg = answerMsg + '\n\nThanks for playing '+ guestName;
   console.log(answerMsg);
   alert(answerMsg)
-}
+} // if (msgValidation!==''){
 
 
 
