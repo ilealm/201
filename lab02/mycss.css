@@ -1,4 +1,8 @@
 
+#userAnsw{
+  text-align: left;
+}
+
 ul{
   font-style: normal;
   text-align: left;
@@ -30,4 +34,12 @@ img{
   border-radius: 30px;
   display: inline;
   padding-left: 20px;
+}
+
+#lblMe{
+  color: rebeccapurple;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+ 
 }
